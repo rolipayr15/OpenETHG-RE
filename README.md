@@ -26,6 +26,7 @@ Windows (x64_86)
 Android (arm v7a & armv8a)
 
 # Todo:
+* Launch official multiplayer server
 * Custom PlayerModels
 * Custom Enemies
 * Custom Maps
