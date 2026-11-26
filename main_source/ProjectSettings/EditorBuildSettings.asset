@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_Scenes:
+  - enabled: 1
+    path: Assets/scenes/Init.unity
+    guid: 026888062b0770d4d80c52aa11291689
+  - enabled: 1
+    path: Assets/scenes/MenuLoader.unity
+    guid: 99b84ff2b34302e4ca4f1fb857c92b4d
+  - enabled: 1
+    path: Assets/scenes/Menu.unity
+    guid: 8d2822efccf804b489368294931a3706
+  - enabled: 1
+    path: Assets/scenes/Loading.unity
+    guid: b848421af2c868c40a6a9cd20d0848cc
+  - enabled: 1
+    path: Assets/scenes/Mansion.unity
+    guid: 0d8de84b5924b4b29823df32b13e2739
+  - enabled: 1
+    path: Assets/scenes/Intro.unity
+    guid: 54c3301bc58c4c34c91c5ad699a5fb04
+  - enabled: 1
+    path: Assets/scenes/Over.unity
+    guid: d032e23690d318a4f8af4856c9c20f53
+  - enabled: 1
+    path: Assets/scenes/Outro.unity
+    guid: 4982858c879d2ca43903d5b46976b05a
+  - enabled: 1
+    path: Assets/Bibloteka/QuitApp/Quit.unity
+    guid: c2064a5fec174064698e6eb8fbffec06
+  - enabled: 1
+    path: Assets/scenes/Win.unity
+    guid: 6ab58d5715625bf42a697c0d5139095f
+  - enabled: 1
+    path: Assets/scenes/PostGameAd.unity
+    guid: efbc293d450329649a6b37e80d356fdf
+  - enabled: 1
+    path: Assets/scenes/PreGameAd.unity
+    guid: 348671894ff84f242bd159542916433c
+  - enabled: 1
+    path: Assets/scenes/MessageBox/MessageBox.unity
+    guid: 01202fda9fbfe8c4eb79f22205173ef5
+  - enabled: 1
+    path: Assets/scenes/MessageBox/CustomToast.unity
+    guid: afa515ec42adf5a43bb5d15fa4307bf0
+  - enabled: 1
+    path: Assets/scenes/MessageBox/RateMe.unity
+    guid: 791e6f61b94a3cf46b467f6b0f4a2d55
+  - enabled: 1
+    path: Assets/scenes/MessageBox/QuestionBox.unity
+    guid: 5fae91c442146324babd7460cae3f34b
+  - enabled: 1
+    path: Assets/scenes/MessageBox/Immersive.unity
+    guid: 92f79ca9c5ecf9d4d83da26d6ae66f66
+  - enabled: 1
+    path: Assets/scenes/MessageBox/JournalEntryBox.unity
+    guid: 3ee274091ae66f14f9b313d40326a216
+  - enabled: 1
+    path: Assets/scenes/MessageBox/ATTpreConsent.unity
+    guid: a28c55273392aa54f9ef1fceae058497
+  - enabled: 1
+    path: Assets/Multiplayer/MultiplayerLobby.unity
+    guid: 2c5c8e497a526ed48911881ce5251601
+  - enabled: 1
+    path: Assets/scenes/AssetBundleManager/AssetBundleManager.unity
+    guid: 0913d53c912779a4bad10f4861534ed2
+  - enabled: 1
+    path: Assets/scenes/MessageBox/birthday/Store.unity
+    guid: a3ab6f89fafc2fd4eb03040390fc3382
+  - enabled: 1
+    path: Assets/scenes/MessageBox/RemoveAdsBox.unity
+    guid: 60f558cc6ce89ff459782bb9d086da46
+  - enabled: 1
+    path: Assets/scenes/MessageBox/UpdateAvailable.unity
+    guid: 050d9b57ba1442b4eb64d470d975c66f
+  - enabled: 1
+    path: Assets/Multiplayer/Profile.unity
+    guid: 3c86ba7254278cb429cd590bf1613791
+  - enabled: 1
+    path: Assets/Multiplayer/Authentication.unity
+    guid: cb5698b1a75e7bc45a2d23901c5cf907
+  - enabled: 1
+    path: Assets/Multiplayer/ChangeUsername.unity
+    guid: 9382f4891a0cfe646b738d7c16d430c9
+  - enabled: 1
+    path: Assets/scenes/MessageBox/ChatSettings.unity
+    guid: d0d2bce9fb8a6c04ebafb295168ff1a0
+  - enabled: 1
+    path: Assets/scenes/MessageBox/MenuPurchase.unity
+    guid: 377bd2ef4c4f6134eb3eacf2834c2c6c
+  - enabled: 1
+    path: Assets/Multiplayer/MultiplayerKeys.unity
+    guid: 43d3fdb5d345fb845a028f8df6a4c1fd
+  - enabled: 1
+    path: Assets/scenes/MessageBox/HowToPlay.unity
+    guid: fe19a4a3b5deb63429e6dd4f73e74cbc
+  - enabled: 1
+    path: Assets/scenes/MessageBox/NetworkIssues.unity
+    guid: 881b53236cfb2cc40aaaa6c32c501200
+  - enabled: 1
+    path: Assets/scenes/MessageBox/ServerTest.unity
+    guid: f167bbe81249c53438a4723901cadbbe
+  - enabled: 1
+    path: Assets/scenes/MessageBox/GameNews.unity
+    guid: cab08821c7b5e4245b31526bf86f1eb4
+  - enabled: 1
+    path: Assets/scenes/MessageBox/BrightnessCalibration.unity
+    guid: 24572fb5d4aca884691c3ba94f2cabf4
+  - enabled: 1
+    path: Assets/scenes/Hospital.unity
+    guid: 173ed9f28dfb35e48a7de4c0a417942a
+  - enabled: 1
+    path: Assets/scenes/School.unity
+    guid: 6a9d6d8499c8a224494c5503aa2102c6
+  m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0

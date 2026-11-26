@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c10f274298905b5ee8a99fa33b33f103, type: 3}
+  m_Name: FootstepOnRock
+  m_EditorClassIdentifier:
+  Sound:
+    m_Sounds:
+    - {fileID: 8300000, guid: f7bd617e183e6db428fc9d67ccb8806a, type: 3}
+    - {fileID: 8300000, guid: 29a73676e636f914abcacd2d7f5a30f4, type: 3}
+    - {fileID: 8300000, guid: 8550be801e7684e4881494446ff104b5, type: 3}
+    - {fileID: 8300000, guid: d8b4d1a2abed43b44897c4396f5abb71, type: 3}
+    - {fileID: 8300000, guid: 67dea414934770c4eb6c3313d212458e, type: 3}
+    - {fileID: 8300000, guid: 6f4b74249ed44e84a97c82fc90ef6597, type: 3}
+    - {fileID: 8300000, guid: a58a0c0cd4814fe43b2d5a08c378bac4, type: 3}
+    - {fileID: 8300000, guid: 628260af5a9d12349ae0541c2c2a4b65, type: 3}
+    MinPitch: 1
+    MaxPitch: 1
+    MaxOnePerFrame: 0
+  Objects:
+    m_Objects: []
+  Decal:
+    m_Prefabs: []
+    MinScale: 1
+    MaxScale: 1
+    AllowEdgeOverlap: 0

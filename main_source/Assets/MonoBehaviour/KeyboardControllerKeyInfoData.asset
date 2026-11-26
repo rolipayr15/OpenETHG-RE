@@ -1,0 +1,217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1e21dd58268b363396984d82ea982f9, type: 3}
+  m_Name: KeyboardControllerKeyInfoData
+  m_EditorClassIdentifier:
+  controllerType: 2
+  keyInfos:
+  - key: 0
+    text: 0
+    icon: {fileID: 21300000, guid: d6ab64edcfa3e9d478c1d07db0823552, type: 2}
+  - key: 1
+    text: 1
+    icon: {fileID: 21300000, guid: 84cb1bb827d7e4c469c2b2aa84b3f861, type: 2}
+  - key: 2
+    text: 2
+    icon: {fileID: 21300000, guid: 9d9468dc5f8e2a246b5c33a27e1456bd, type: 2}
+  - key: 3
+    text: 3
+    icon: {fileID: 21300000, guid: 367901e47f3f9ed4aa8420d0dfd63eaa, type: 2}
+  - key: 4
+    text: 4
+    icon: {fileID: 21300000, guid: 7f808b40dcf0a3a4395ca10a441c1e52, type: 2}
+  - key: 5
+    text: 5
+    icon: {fileID: 21300000, guid: f324e8b768a59244188c4ea98ec2eec6, type: 2}
+  - key: 6
+    text: 6
+    icon: {fileID: 21300000, guid: 9446e67c6d2fda94dab02386a546ee80, type: 2}
+  - key: 7
+    text: 7
+    icon: {fileID: 21300000, guid: 072ea687e197feb4aaeb2c85f8a8cabd, type: 2}
+  - key: 8
+    text: 8
+    icon: {fileID: 21300000, guid: d1f93acd8b7c07c448879b0426309da4, type: 2}
+  - key: 9
+    text: 9
+    icon: {fileID: 21300000, guid: f6bdaf35be543e7418dfac5a1934f645, type: 2}
+  - key: F1
+    text: F1
+    icon: {fileID: 21300000, guid: ffc24684edb55d541a6f8d3434ece577, type: 2}
+  - key: F2
+    text: F2
+    icon: {fileID: 21300000, guid: d89b27c2fb106c441b381c0d2290ed2d, type: 2}
+  - key: F3
+    text: F3
+    icon: {fileID: 21300000, guid: be5fb52263075c04e9fed5d528696a83, type: 2}
+  - key: F4
+    text: F4
+    icon: {fileID: 21300000, guid: 20a22d797fcb5a9459c93da18daa43cd, type: 2}
+  - key: F5
+    text: F5
+    icon: {fileID: 21300000, guid: 408809deb08db71428a266f00328cd8f, type: 2}
+  - key: F6
+    text: F6
+    icon: {fileID: 21300000, guid: ca839924ce937a940859a993d574c573, type: 2}
+  - key: F7
+    text: F7
+    icon: {fileID: 21300000, guid: 50f021c8d91bfba438721d3c4b757b4b, type: 2}
+  - key: F8
+    text: F8
+    icon: {fileID: 21300000, guid: 7a1b2233cce86e1409adaba5c0574160, type: 2}
+  - key: F9
+    text: F9
+    icon: {fileID: 21300000, guid: d65289800a2447d448d29fececcb2698, type: 2}
+  - key: F10
+    text: F10
+    icon: {fileID: 21300000, guid: 18d18aa18cd11a7418d0ad243fec051d, type: 2}
+  - key: F11
+    text: F11
+    icon: {fileID: 21300000, guid: 16855e344391773489c4260f22077183, type: 2}
+  - key: F12
+    text: F12
+    icon: {fileID: 21300000, guid: 6fd1bf1a616fa924097709979550d3d4, type: 2}
+  - key: Alt
+    text: Alt
+    icon: {fileID: 21300000, guid: a89bd4cbcec639740931fef7061183c0, type: 2}
+  - key: Ctrl
+    text: Ctrl
+    icon: {fileID: 21300000, guid: b692a4996a20d124c8aeed35267fcdf8, type: 2}
+  - key: Shift
+    text: Shift
+    icon: {fileID: 21300000, guid: f3fcdfb8ed98e0b49b4ae63de8f974dd, type: 2}
+  - key: A
+    text: A
+    icon: {fileID: 21300000, guid: 1c2c831281ffc6746b32f8132ca1da6a, type: 2}
+  - key: B
+    text: B
+    icon: {fileID: 21300000, guid: c7b51600af3128f488370c4e743eeb30, type: 2}
+  - key: C
+    text: C
+    icon: {fileID: 21300000, guid: fb64de168bb2cb84da449352db5a9f25, type: 2}
+  - key: D
+    text: D
+    icon: {fileID: 21300000, guid: 118f70f68387bad49b971b92fff67577, type: 2}
+  - key: E
+    text: E
+    icon: {fileID: 21300000, guid: c4214c32ee732c64b89e649997b2a96d, type: 2}
+  - key: F
+    text: F
+    icon: {fileID: 21300000, guid: 1d0a163cd5f286840873ed67eb52e6a1, type: 2}
+  - key: G
+    text: G
+    icon: {fileID: 21300000, guid: 98f21567c9a7f304eaa20c0392bf6b99, type: 2}
+  - key: H
+    text: H
+    icon: {fileID: 21300000, guid: 7fc472d3e7e1ce841987054f7e3f4a33, type: 2}
+  - key: I
+    text: I
+    icon: {fileID: 21300000, guid: c93638fdf9b75c64b8eb3231b65b395b, type: 2}
+  - key: J
+    text: J
+    icon: {fileID: 21300000, guid: a5007e254304de9439adc491c1600c0b, type: 2}
+  - key: K
+    text: K
+    icon: {fileID: 21300000, guid: 3ee49d68366857141b3d7b2434198feb, type: 2}
+  - key: L
+    text: L
+    icon: {fileID: 21300000, guid: 3d932f28595b6444a9b289dd5faf0e8c, type: 2}
+  - key: M
+    text: M
+    icon: {fileID: 21300000, guid: 9cb11fdefbba9ad42ac44fea3e7980d6, type: 2}
+  - key: N
+    text: N
+    icon: {fileID: 21300000, guid: 21838428e7393824ea324ac05846af86, type: 2}
+  - key: O
+    text: O
+    icon: {fileID: 21300000, guid: 4c38fc5e9a122dd46ab905dc8932a9ee, type: 2}
+  - key: P
+    text: P
+    icon: {fileID: 21300000, guid: 7f93c486fbf18a44d8f4a9b3dfb41678, type: 2}
+  - key: Q
+    text: Q
+    icon: {fileID: 21300000, guid: a6d6bed1521b23a4e9d0332f92a39fe5, type: 2}
+  - key: R
+    text: R
+    icon: {fileID: 21300000, guid: 82c0669faea2be54b91a90c98e8ea32b, type: 2}
+  - key: S
+    text: S
+    icon: {fileID: 21300000, guid: 36f15d9469fedec4cb21c15f5e42696b, type: 2}
+  - key: T
+    text: T
+    icon: {fileID: 21300000, guid: 98b8f3e2ec68acc47b218f372c03b1ed, type: 2}
+  - key: U
+    text: U
+    icon: {fileID: 21300000, guid: e9caed20156690743bf6222a60aa3c70, type: 2}
+  - key: V
+    text: V
+    icon: {fileID: 21300000, guid: 0a0c1d2a6ab26e748a6a35b8eaa01aa6, type: 2}
+  - key: W
+    text: W
+    icon: {fileID: 21300000, guid: 0bc7b93dec349e44d87f9427f6a73563, type: 2}
+  - key: X
+    text: X
+    icon: {fileID: 21300000, guid: 9d4b3e5856e7a7b45b514d8ef116bf0c, type: 2}
+  - key: Y
+    text: Y
+    icon: {fileID: 21300000, guid: e3ca23d59dca0d344aa1673097117fc1, type: 2}
+  - key: Z
+    text: Z
+    icon: {fileID: 21300000, guid: c5ec26fbbc5f02a488346506f308eb04, type: 2}
+  - key: /
+    text: /
+    icon: {fileID: 21300000, guid: 9ee0ea8bfaca17645861de76b04f3071, type: 2}
+  - key: Enter
+    text: Enter
+    icon: {fileID: 21300000, guid: e6893557ff433334a8c739a2844a8cf8, type: 2}
+  - key: Del
+    text: Del
+    icon: {fileID: 21300000, guid: 1dc9e3df7012a67488836e5de3b869e1, type: 2}
+  - key: Home
+    text: Home
+    icon: {fileID: 21300000, guid: f55ebabcb653e0b4ab41cf0afe483646, type: 2}
+  - key: Insert
+    text: Insert
+    icon: {fileID: 21300000, guid: 30963f557320c524484f0c58285687b6, type: 2}
+  - key: Page Up
+    text: Page Up
+    icon: {fileID: 21300000, guid: c480b2174dc23be43abbe516e40300f3, type: 2}
+  - key: Page Down
+    text: Page Down
+    icon: {fileID: 21300000, guid: c480b2174dc23be43abbe516e40300f3, type: 2}
+  - key: End
+    text: End
+    icon: {fileID: 21300000, guid: bdba2c43bd9ff3e42bfe665f9bd3529d, type: 2}
+  - key: Caps Lock
+    text: Caps Lock
+    icon: {fileID: 21300000, guid: 36811dc0f540a274d93ee6fde9ff1a00, type: 2}
+  - key: Tab
+    text: Tab
+    icon: {fileID: 21300000, guid: 4d7e0f4d64b26f343a4a819dd5b9b314, type: 2}
+  - key: Tilda
+    text: Tilda
+    icon: {fileID: 21300000, guid: 985953071e3d11f41ada24dd5c8af813, type: 2}
+  - key: Backspace
+    text: Backspace
+    icon: {fileID: 21300000, guid: 97f6c6916814c6544948ef4e99b97d1d, type: 2}
+  - key: Arrow Up
+    text: Arrow Up
+    icon: {fileID: 21300000, guid: 4a8278fc89e41794596fa688466a68a3, type: 2}
+  - key: Arrow Down
+    text: Arrow Down
+    icon: {fileID: 21300000, guid: e4a3efb168c3e7e47b4abb6938ab27bf, type: 2}
+  - key: Arrow Right
+    text: Arrow Right
+    icon: {fileID: 21300000, guid: 3b0130f228e79344998142741b0f13fb, type: 2}
+  - key: Arrow Left
+    text: Arrow Left
+    icon: {fileID: 21300000, guid: 36e29c55b057cd749b03945edf6b7055, type: 2}

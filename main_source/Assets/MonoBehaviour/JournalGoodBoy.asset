@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 725b5b764f4b9b824859eedf06364051, type: 3}
+  m_Name: JournalGoodBoy
+  m_EditorClassIdentifier:
+  enemyId: 2
+  dialogues:
+  - {fileID: 11400000, guid: 7dc717dfba116174ea890b00e790c7a3, type: 2}
+  - {fileID: 11400000, guid: 1c120183a6fcda146aee998bd195634d, type: 2}
+  - {fileID: 11400000, guid: f7f9815fe4815eb4c8eecbfdce1ffce6, type: 2}
+  - {fileID: 11400000, guid: dbbd866bce40c2a499b243b8be6da331, type: 2}
+  - {fileID: 11400000, guid: 0060865406845844db383b7655840c0d, type: 2}
+  - {fileID: 11400000, guid: a6d26dbf225b90740ad4a59e0aa8361b, type: 2}

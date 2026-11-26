@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 725b5b764f4b9b824859eedf06364051, type: 3}
+  m_Name: JournalKrasue
+  m_EditorClassIdentifier:
+  enemyId: 0
+  dialogues:
+  - {fileID: 11400000, guid: 2089f89b675109e44b20eb1b4636fac0, type: 2}
+  - {fileID: 11400000, guid: 6686e2d2e6a9bcc488cd756f6ccedc6d, type: 2}
+  - {fileID: 11400000, guid: 2011f6da56c5e32468c6ab0b5231b810, type: 2}
+  - {fileID: 11400000, guid: 97e8e877ff691b54e87851e3ff2de9fc, type: 2}
+  - {fileID: 11400000, guid: 3733d6faafad67d41a318784ba1d584f, type: 2}
+  - {fileID: 11400000, guid: 02e89c0a30809774c9962c4981ab73bb, type: 2}

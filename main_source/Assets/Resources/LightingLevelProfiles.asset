@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9532fe75a2a28ffc1d4da340f088c718, type: 3}
+  m_Name: LightingLevelProfiles
+  m_EditorClassIdentifier:
+  entries:
+  - scene: Hospital
+    profile: {fileID: 11400000, guid: 55240a7e15457c34aac7400dffff3554, type: 2}
+  - scene: School
+    profile: {fileID: 11400000, guid: e5a0127dce794f048947f4ea43e18b5d, type: 2}
+  - scene: Mansion
+    profile: {fileID: 11400000, guid: 519ccd70f78cd8340a7b64656386d6ae, type: 2}

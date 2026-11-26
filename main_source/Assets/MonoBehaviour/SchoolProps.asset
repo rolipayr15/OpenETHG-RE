@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54ba534f5062eedbe0b9f73584121a9, type: 3}
+  m_Name: SchoolProps
+  m_EditorClassIdentifier:
+  levelId: 3
+  items:
+  - {fileID: 11400000, guid: 9b565b78827a51d40b910c8979dc6d85, type: 2}
+  - {fileID: 11400000, guid: c8ddbbd08f1072e4ba8210c990a0482f, type: 2}
+  - {fileID: 11400000, guid: 590c2a26fe2cfd84ebd2cc097968245c, type: 2}
+  - {fileID: 11400000, guid: d8bcc2cd3071ba84486ba18d3a020c8b, type: 2}
+  - {fileID: 11400000, guid: ab59dc6556fdc34479046048b04fe91b, type: 2}
+  - {fileID: 11400000, guid: 734a9081862eaf247816270aabbc8392, type: 2}
+  - {fileID: 11400000, guid: b8c4c67d3f025d443befc7bb505c79ea, type: 2}
+  - {fileID: 11400000, guid: 27d3fa0811f313a4fac32f03934cb1e9, type: 2}
+  - {fileID: 11400000, guid: fe1149316f9dfd64c8d5cfa5b8ba6dce, type: 2}

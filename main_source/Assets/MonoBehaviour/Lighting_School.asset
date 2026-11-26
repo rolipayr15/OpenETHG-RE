@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3601f04ca514db6144ada7986d224da6, type: 3}
+  m_Name: Lighting_School
+  m_EditorClassIdentifier:
+  falloffStart: 8
+  falloffEnd: 11
+  falloffSmooth: 1
+  falloffColor: {r: 0.022058845, g: 0.022058845, b: 0.022058845, a: 1}
+  desaturationLevel: 0.308
+  desaturationAdditiveLevel: 0.5
+  lmScale: 0.4
+  flashlightIntensity: 0.55
+  flashlightMix: 0.571
+  flashlightFloor: 0.053
+  ambientColor: {r: 0.1764706, g: 0.1764706, b: 0.1764706, a: 1}
+  revealNormalize: 2.8
+  classicOverride: {fileID: 11400000, guid: 93739f2310725214787f22f549c9ca24, type: 2}

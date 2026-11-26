@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54ba534f5062eedbe0b9f73584121a9, type: 3}
+  m_Name: MansionProps
+  m_EditorClassIdentifier:
+  levelId: 0
+  items:
+  - {fileID: 11400000, guid: f20dc0b8d268a8748a967df59a7ebbf9, type: 2}
+  - {fileID: 11400000, guid: 1347385db02df6f4fa2f115f175c6faf, type: 2}
+  - {fileID: 11400000, guid: 30e7f86bd42098548ae6d1d61f580e97, type: 2}
+  - {fileID: 11400000, guid: f577b9598f20ba349a2025440cb882b3, type: 2}
+  - {fileID: 11400000, guid: 01f9dcef9ef862340b68aeede3abcd7f, type: 2}
+  - {fileID: 11400000, guid: fe5223cfc6e1b9d42b24e39e52729edc, type: 2}
+  - {fileID: 11400000, guid: 3c2ac7c4e72c4c946aa593ce0b6976a4, type: 2}
+  - {fileID: 11400000, guid: eba3a40845475c142b4c60bdb8d0dbc9, type: 2}
+  - {fileID: 11400000, guid: 38b28c89bd6c6f047aae729045ae30b3, type: 2}
+  - {fileID: 11400000, guid: 56f997c68edf83049a40dde7af947940, type: 2}
+  - {fileID: 11400000, guid: 448d179b933a81040bdbfc942726fc4c, type: 2}
+  - {fileID: 11400000, guid: 0a0e396449172244a88160d69da0ad48, type: 2}
+  - {fileID: 11400000, guid: b91975d1c3325344eb9c985de36e2896, type: 2}
+  - {fileID: 11400000, guid: 717edfbc67fbaab4390a3326d5352789, type: 2}
+  - {fileID: 11400000, guid: 57ff856eff30f9a41bb7101cd4d260c2, type: 2}
+  - {fileID: 11400000, guid: 144b4f8b17eba694193e4d1be836f5f9, type: 2}
+  - {fileID: 11400000, guid: 0fd68143b4e87434cb7ec871e78501e4, type: 2}
+  - {fileID: 11400000, guid: fbba21921b046b7428f631fa6febe6b9, type: 2}
+  - {fileID: 11400000, guid: 4996408d1165642459f3c17ce3106c92, type: 2}

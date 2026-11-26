@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c10f274298905b5ee8a99fa33b33f103, type: 3}
+  m_Name: ShotgunPelletOnRock
+  m_EditorClassIdentifier:
+  Sound:
+    m_Sounds:
+    - {fileID: 8300000, guid: c8d0d9e1ae3a6c6408d43280d985342f, type: 3}
+    - {fileID: 8300000, guid: 855939374c6d20a46a2c4162237b0e99, type: 3}
+    - {fileID: 8300000, guid: 44d6a79994b6afe419d12b738e2958fd, type: 3}
+    - {fileID: 8300000, guid: 8eefdede1b7748e43b9397e54c4e1546, type: 3}
+    MinPitch: 1
+    MaxPitch: 1
+    MaxOnePerFrame: 1
+  Objects:
+    m_Objects:
+    - Prefab: {fileID: 0}
+      Probability: 1
+    - Prefab: {fileID: 0}
+      Probability: 1
+    - Prefab: {fileID: 0}
+      Probability: 1
+    - Prefab: {fileID: 0}
+      Probability: 0.25
+  Decal:
+    m_Prefabs:
+    - {fileID: 1709254077376921, guid: e81cd0b3170cbf644ac21368a40be132, type: 2}
+    MinScale: 0.75
+    MaxScale: 0.75
+    AllowEdgeOverlap: 0.25

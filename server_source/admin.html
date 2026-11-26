@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eyes Admin</title>
+<style>
+:root { color-scheme: dark; --bg:#121212; --panel:#1d1d1d; --line:#333; --text:#eee; --muted:#999; --accent:#d9b44a; --bad:#d9534f; }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:14px/1.4 system-ui,sans-serif; }
+header { display:flex; flex-wrap:wrap; gap:16px; align-items:center; padding:12px 16px; background:var(--panel); border-bottom:1px solid var(--line); }
+h1 { font-size:18px; margin:0; }
+nav button.active { background:var(--accent); color:#111; }
+main { padding:16px; max-width:1400px; margin:auto; }
+section { display:none; } section.active { display:block; }
+table { width:100%; border-collapse:collapse; margin:8px 0 16px; }
+th,td { border-bottom:1px solid var(--line); padding:6px 8px; text-align:left; vertical-align:top; }
+th { color:var(--muted); font-weight:500; }
+input,select,textarea { background:#111; color:var(--text); border:1px solid var(--line); border-radius:4px; padding:5px 7px; font:inherit; max-width:100%; }
+input[type=number] { width:80px; }
+textarea { width:100%; min-height:110px; }
+button { background:#2c2c2c; color:var(--text); border:1px solid var(--line); border-radius:4px; padding:5px 10px; cursor:pointer; font:inherit; }
+button:hover { border-color:var(--accent); }
+button.danger { color:var(--bad); }
+.card { background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:12px; margin-bottom:12px; }
+.row { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin:6px 0; }
+.muted { color:var(--muted); }
+.scroll { overflow-x:auto; }
+label { display:inline-flex; gap:6px; align-items:center; }
+#toast { position:fixed; right:16px; bottom:16px; background:var(--accent); color:#111; padding:8px 12px; border-radius:4px; display:none; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Eyes Admin</h1>
+  <nav class="row">
+    <button data-tab="rooms">Комнаты</button>
+    <button data-tab="accounts">Аккаунты</button>
+    <button data-tab="news">Новости</button>
+    <button data-tab="daily">Испытание</button>
+    <button data-tab="settings">Настройки</button>
+  </nav>
+  <span id="summary" class="muted"></span>
+</header>
+<main>
+  <section id="rooms"><div id="roomList"></div></section>
+
+  <section id="accounts">
+    <div class="row"><input id="search" placeholder="Поиск по логину или имени"><button id="searchBtn">Найти</button></div>
+    <div class="scroll"><table id="accountTable"></table></div>
+  </section>
+
+  <section id="news">
+    <div class="card">
+      <input type="hidden" id="newsId">
+      <div class="row"><input id="newsTitle" placeholder="Заголовок" style="flex:1"></div>
+      <textarea id="newsBody" placeholder="Текст новости"></textarea>
+      <div class="row">
+        <select id="newsCategory"><option value="Info">Info</option><option value="Update">Update</option></select>
+        <label><input type="checkbox" id="newsPopup"> показать окном при входе</label>
+        <button id="newsSave">Сохранить новость</button>
+        <button id="newsClear">Очистить</button>
+      </div>
+    </div>
+    <div id="newsList"></div>
+  </section>
+
+  <section id="daily">
+    <div class="card">
+      <strong>Сейчас у игроков:</strong> <span id="dailyCurrent" class="muted"></span>
+      <p class="muted">Отметьте испытания и опубликуйте: они идут по очереди, каждое заданное число часов. Изменения видны игрокам при следующем обновлении меню.</p>
+      <div class="row">
+        <label>Часов на одно испытание <input id="dailyHours" type="number" value="24" min="1"></label>
+        <button id="dailyPublish">Опубликовать</button>
+        <button id="dailyStop" class="danger">Снять с публикации</button>
+      </div>
+    </div>
+    <div class="scroll"><table id="dailyTable"></table></div>
+    <div class="card">
+      <strong id="dailyFormTitle">Новое испытание</strong>
+      <input type="hidden" id="dailyId">
+      <div class="row">
+        <label>Тип <select id="dailyKind"></select></label>
+        <label>Параметр <input id="dailyParameter" type="number" value="1"></label>
+        <label>Цель <input id="dailyGoal" type="number" value="1" min="1"></label>
+      </div>
+      <p class="muted">Параметр: шаги, секунды, число поимок или кормлений и т.п., зависит от типа. Цель: сколько раз нужно выполнить.</p>
+      <div class="row"><input id="dailyTitle" placeholder="Заголовок" style="flex:1"></div>
+      <div class="row"><input id="dailyShort" placeholder="Короткое описание для меню" style="flex:1"></div>
+      <textarea id="dailyDescription" placeholder="Полное описание"></textarea>
+      <div class="row"><button id="dailySave">Сохранить испытание</button><button id="dailyClear">Очистить</button></div>
+    </div>
+  </section>
+
+  <section id="settings">
+    <div class="card">
+      <label><input type="checkbox" id="testMode"> Не тратить ключи.</label>
+      <p class="muted">Полностью бесплатный мультиплеер. Работает только у игроков на пользовательском сервере (собственно вы находитесь в админ панели одного из таких).</p>
+    </div>
+  </section>
+</main>
+<div id="toast"></div>
+<script>
+const $ = id => document.getElementById(id);
+const REASONS = ["NETWORK_ERROR","EXIT_TO_MENU","HOST_KILLED","GUEST_KILLED","HOST_WON","GUEST_WON","CANCEL","APP_QUIT","REMOVE_ABUSER"];
+function toast(text) { const t = $("toast"); t.textContent = text; t.style.display = "block"; setTimeout(() => t.style.display = "none", 2000); }
+async function api(path, body) {
+  const options = { headers: { "X-Admin": "1" } };
+  if (body !== undefined) { options.method = "POST"; options.body = JSON.stringify(body); options.headers["Content-Type"] = "application/json"; }
+  const response = await fetch("/admin/api/" + path, options);
+  const data = await response.json();
+  if (!response.ok) { toast(data.reason || "Ошибка"); throw new Error(data.reason); }
+  return data;
+}
+function el(tag, props, ...children) {
+  const node = document.createElement(tag);
+  Object.assign(node, props || {});
+  for (const child of children) node.append(child);
+  return node;
+}
+function button(text, handler, cls) { return el("button", { textContent: text, onclick: handler, className: cls || "" }); }
+function field(value, type) { return el("input", { value: value == null ? "" : value, type: type || "text" }); }
+
+let editing = false;
+async function loadRooms() {
+  if (editing) return;
+  const data = await api("rooms");
+  $("summary").textContent = "Комнат: " + data.rooms.length + ", игроков онлайн: " + data.online;
+  const list = $("roomList");
+  list.replaceChildren();
+  if (!data.rooms.length) list.append(el("p", { className: "muted", textContent: "Активных комнат нет" }));
+  for (const room of data.rooms) {
+    const card = el("div", { className: "card" });
+    card.onfocusin = () => editing = true;
+    card.onfocusout = () => editing = false;
+    const info = `${room.id} · №${room.number} · ${room.payload.type} · ${room.payload.level} · ${room.payload.enemy} · ${room.payload.difficulty}` + (room.token ? " · код " + room.token : "") + " · " + (room.finished ? "завершена" : room.started ? "идёт " + room.duration + " с" : "ожидание");
+    card.append(el("div", { textContent: info }));
+    const table = el("table");
+    table.append(el("tr", {}, el("th", { textContent: "Игрок" }), el("th", { textContent: "Логин" }), el("th", { textContent: "Связь" }), el("th", { textContent: "Мешки" }), el("th")));
+    room.players.forEach((p, i) => {
+      if (!p) return;
+      const bags = field(p.bags, "number");
+      table.append(el("tr", {},
+        el("td", { textContent: (i === 0 ? "Хост: " : "Гость: ") + p.username }),
+        el("td", { textContent: p.login }),
+        el("td", { textContent: p.connected ? "онлайн" : "нет связи" }),
+        el("td", {}, bags, " ", button("Записать", () => api("rooms/bags", { room: room.id, player: i, bags: +bags.value }).then(() => toast("Сохранено")))),
+        el("td", {}, button("Отключить", () => api("rooms/kick", { room: room.id, player: i }), "danger"))));
+    });
+    card.append(table);
+    const reason = el("select");
+    REASONS.forEach((r, i) => reason.append(el("option", { value: i, textContent: r })));
+    const data2 = el("textarea", { value: room.game_data || "" });
+    card.append(el("details", {}, el("summary", { textContent: "Данные старта (GameData)" }), data2, button("Сохранить данные", () => api("rooms/gamedata", { room: room.id, game_data: data2.value }).then(() => toast("Сохранено")))));
+    card.append(el("div", { className: "row" }, reason,
+      button("Завершить матч", () => api("rooms/finish", { room: room.id, reason: +reason.value })),
+      button("Закрыть комнату", () => { if (confirm("Закрыть комнату?")) api("rooms/close", { room: room.id }); }, "danger")));
+    list.append(card);
+  }
+}
+
+async function loadAccounts() {
+  const data = await api("accounts?q=" + encodeURIComponent($("search").value));
+  const table = $("accountTable");
+  table.replaceChildren(el("tr", {}, ...["Логин", "Имя", "Опыт", "Игры", "Победы", "Мешки", "Время, с", "Дистанция", "Бан", ""].map(t => el("th", { textContent: t }))));
+  for (const a of data.accounts) {
+    const name = field(a.name), exp = field(a.exp, "number"), games = field(a.games, "number"), won = field(a.won, "number"), bags = field(a.bags, "number"), seconds = field(a.seconds, "number"), distance = field(a.distance, "number");
+    const banned = el("input", { type: "checkbox", checked: !!a.banned });
+    table.append(el("tr", {},
+      el("td", { textContent: a.login }), el("td", {}, name), el("td", {}, exp), el("td", {}, games), el("td", {}, won), el("td", {}, bags), el("td", {}, seconds), el("td", {}, distance), el("td", {}, banned),
+      el("td", {},
+        button("Сохранить", () => api("accounts/save", { login: a.login, name: name.value, exp: +exp.value, games: +games.value, won: +won.value, bags: +bags.value, seconds: +seconds.value, distance: +distance.value, banned: banned.checked }).then(() => toast("Сохранено"))),
+        " ",
+        button("Удалить", () => { if (confirm("Удалить аккаунт " + a.login + "?")) api("accounts/delete", { login: a.login }).then(loadAccounts); }, "danger"))));
+  }
+}
+
+function resetNews() { $("newsId").value = ""; $("newsTitle").value = ""; $("newsBody").value = ""; $("newsCategory").value = "Info"; $("newsPopup").checked = false; }
+async function loadNews() {
+  const data = await api("news");
+  const list = $("newsList");
+  list.replaceChildren();
+  for (const item of data.items) {
+    list.append(el("div", { className: "card" },
+      el("strong", { textContent: item.title }),
+      el("div", { className: "muted", textContent: item.publishAt + " · " + item.category + (item.showAsPopup ? " · окно при входе" : "") }),
+      el("p", { textContent: item.body, style: "white-space:pre-wrap" }),
+      el("div", { className: "row" },
+        button("Изменить", () => { $("newsId").value = item.id; $("newsTitle").value = item.title; $("newsBody").value = item.body; $("newsCategory").value = item.category; $("newsPopup").checked = item.showAsPopup; window.scrollTo(0, 0); }),
+        button("Удалить", () => { if (confirm("Удалить новость?")) api("news/delete", { id: item.id }).then(loadNews); }, "danger"))));
+  }
+}
+$("newsSave").onclick = () => {
+  if (!$("newsTitle").value.trim() || !$("newsBody").value.trim()) { toast("Заполните заголовок и текст"); return; }
+  api("news/save", { id: $("newsId").value, title: $("newsTitle").value, body: $("newsBody").value, category: $("newsCategory").value, showAsPopup: $("newsPopup").checked }).then(() => { resetNews(); loadNews(); toast("Опубликовано"); });
+};
+$("newsClear").onclick = resetNews;
+$("searchBtn").onclick = loadAccounts;
+$("search").onkeydown = e => { if (e.key === "Enter") loadAccounts(); };
+
+function resetDaily() { $("dailyId").value = ""; $("dailyTitle").value = ""; $("dailyShort").value = ""; $("dailyDescription").value = ""; $("dailyParameter").value = 1; $("dailyGoal").value = 1; $("dailyFormTitle").textContent = "Новое испытание"; }
+async function loadDaily() {
+  const data = await api("daily");
+  const select = $("dailyKind");
+  if (!select.options.length) data.kinds.forEach((k, i) => select.append(el("option", { value: i, textContent: k })));
+  $("dailyCurrent").textContent = data.current ? "№" + data.current.challengeId + ", до " + data.current.deadline : "нет активного испытания";
+  const active = data.plan ? data.plan.ids : [];
+  if (data.plan) $("dailyHours").value = data.plan.hours;
+  const table = $("dailyTable");
+  table.replaceChildren(el("tr", {}, ...["", "№", "Название", "Тип", "Параметр", "Цель", ""].map(t => el("th", { textContent: t }))));
+  for (const c of data.challenges) {
+    const check = el("input", { type: "checkbox", checked: active.includes(c.id) });
+    check.dataset.challenge = c.id;
+    const actions = el("td");
+    if (!c.builtin) {
+      actions.append(button("Изменить", () => { $("dailyId").value = c.id; $("dailyKind").value = c.kind; $("dailyParameter").value = c.parameter; $("dailyGoal").value = c.goal; $("dailyTitle").value = c.title; $("dailyShort").value = c.shortDescription; $("dailyDescription").value = c.description; $("dailyFormTitle").textContent = "Испытание №" + c.id; }), " ",
+        button("Удалить", () => { if (confirm("Удалить испытание?")) api("daily/delete", { id: c.id }).then(loadDaily); }, "danger"));
+    }
+    table.append(el("tr", {}, el("td", {}, check), el("td", { textContent: c.id }), el("td", { textContent: c.title }), el("td", { textContent: data.kinds[c.kind] }), el("td", { textContent: c.parameter }), el("td", { textContent: c.goal }), actions));
+  }
+}
+$("dailyPublish").onclick = () => {
+  const ids = [...document.querySelectorAll("input[data-challenge]")].filter(c => c.checked).map(c => +c.dataset.challenge);
+  api("daily/publish", { ids, hours: +$("dailyHours").value }).then(() => { toast("Опубликовано"); loadDaily(); });
+};
+$("dailyStop").onclick = () => { if (confirm("Снять испытание с публикации?")) api("daily/stop", {}).then(loadDaily); };
+$("dailyClear").onclick = resetDaily;
+$("dailySave").onclick = () => {
+  if (!$("dailyTitle").value.trim()) { toast("Заполните заголовок"); return; }
+  api("daily/save", { id: $("dailyId").value, kind: +$("dailyKind").value, parameter: +$("dailyParameter").value, goal: +$("dailyGoal").value, title: $("dailyTitle").value, shortDescription: $("dailyShort").value, description: $("dailyDescription").value }).then(() => { resetDaily(); toast("Сохранено"); loadDaily(); });
+};
+
+async function loadSettings() { $("testMode").checked = (await api("settings")).test_mode; }
+$("testMode").onchange = () => api("settings", { test_mode: $("testMode").checked }).then(() => toast("Сохранено"));
+
+const loaders = { rooms: loadRooms, accounts: loadAccounts, news: loadNews, daily: loadDaily, settings: loadSettings };
+let current = "rooms";
+function show(tab) {
+  current = tab;
+  document.querySelectorAll("section").forEach(s => s.classList.toggle("active", s.id === tab));
+  document.querySelectorAll("nav button").forEach(b => b.classList.toggle("active", b.dataset.tab === tab));
+  loaders[tab]();
+}
+document.querySelectorAll("nav button").forEach(b => b.onclick = () => show(b.dataset.tab));
+show("rooms");
+setInterval(() => { if (current === "rooms") loadRooms(); }, 2000);
+</script>
+</body>
+</html>

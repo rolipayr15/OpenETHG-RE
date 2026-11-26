@@ -1,0 +1,12 @@
+///////////////////////////////////////////////////////////
+// Component Preset Script
+///////////////////////////////////////////////////////////
+
+ComponentType vp_FPCamera
+RenderingFieldOfView 50
+RenderingZoomDamping 0.5
+PositionKneeling 0.3522727
+RotationKneeling 0.064
+RotationStrafeRoll -1.870968
+ShakeSpeed 0.2444303
+ShakeAmplitude 100 100 0

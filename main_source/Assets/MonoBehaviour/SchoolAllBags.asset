@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e54ba534f5062eedbe0b9f73584121a9, type: 3}
+  m_Name: SchoolAllBags
+  m_EditorClassIdentifier:
+  levelId: 3
+  items:
+  - {fileID: 11400000, guid: 95447115effab214a9c325e45135a580, type: 2}
+  - {fileID: 11400000, guid: 590228b1a07c97a4abcc7779ef2be9a7, type: 2}
+  - {fileID: 11400000, guid: 3bfda6687c8634742be125722260fe19, type: 2}
+  - {fileID: 11400000, guid: c626bf60898db144b8c3a29cfd46cec4, type: 2}
+  - {fileID: 11400000, guid: 855d17e29ddb1b34f94bdf04b5bce736, type: 2}
+  - {fileID: 11400000, guid: 2fa78d4ccb86b6848a08ea1c7d14f1e1, type: 2}
+  - {fileID: 11400000, guid: e890d8fca0a7f6645a1a9639e495d26e, type: 2}
+  - {fileID: 11400000, guid: 6f8f65336654016489d1956297314073, type: 2}
+  - {fileID: 11400000, guid: e1df342addd76914fbc103a34df158b5, type: 2}
+  - {fileID: 11400000, guid: 9cec487d2aaf3b04b8692b483bb435b2, type: 2}
+  - {fileID: 11400000, guid: 84e34b02ab3413f4794a60fa739e5b23, type: 2}
+  - {fileID: 11400000, guid: 28d7a8cda491ded4e9ea27050e426a2f, type: 2}

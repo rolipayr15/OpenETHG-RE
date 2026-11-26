@@ -1,0 +1,975 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1245385824, guid: 48bc23c85e3b860d4cabb4491b2ffd8f, type: 3}
+  m_Name: EssentialKitSettings
+  m_EditorClassIdentifier:
+  m_applicationSettings:
+    m_logLevel: 1
+    m_appStoreIds:
+      m_ios: com.eyesthegame.lite
+      m_tvos:
+      m_android: com.eyesthegame.eyes
+    m_usagePermissionSettings:
+      m_addressBookUsagePermission:
+        m_description: $productName uses contacts.
+        m_descriptionOverrides:
+          m_ios:
+          m_tvos:
+          m_android:
+      m_cameraUsagePermission:
+        m_description: $productName uses camera.
+        m_descriptionOverrides:
+          m_ios:
+          m_tvos:
+          m_android:
+      m_galleryUsagePermission:
+        m_description: $productName uses gallery.
+        m_descriptionOverrides:
+          m_ios:
+          m_tvos:
+          m_android:
+      m_galleryWritePermission:
+        m_description: $productName wants to write to gallery.
+        m_descriptionOverrides:
+          m_ios:
+          m_tvos:
+          m_android:
+      m_locationWhenInUsePermission:
+        m_description: $productName would like to user your location.
+        m_descriptionOverrides:
+          m_ios:
+          m_tvos:
+          m_android:
+      m_accessFriendsPermission:
+        m_description: $productName wants to access friends.
+        m_descriptionOverrides:
+          m_ios:
+          m_tvos:
+          m_android:
+    m_additionalPlatformSupportSettings:
+      m_supportAndroidPc: 0
+  m_addressBookSettings:
+    m_isEnabled: 0
+    m_defaultImage: {fileID: 0}
+  m_appUpdaterSettings:
+    m_isEnabled: 1
+    m_defaultPromptTitle: New version available!
+    m_defaultPromptMessage: Old versions attract more ghosts. Probably. Update's out.
+  m_appShortcutsSettings:
+    m_isEnabled: 0
+    m_icons: []
+  m_nativeUISettings:
+    m_isEnabled: 0
+    m_customUICollection:
+      m_rendererPrefab: {fileID: 114884547391421755, guid: 8cf6bfdf1d3840d4e8c13461760622e4, type: 2}
+      m_alertDialogPrefab: {fileID: 114632457200066912, guid: 3a20c5d69addaee4a806a4defed92d51, type: 2}
+      m_datePickerPrefab: {fileID: 0}
+  m_sharingServicesSettings:
+    m_isEnabled: 1
+  m_cloudServicesSettings:
+    m_isEnabled: 1
+    m_iosProperties:
+      m_substituteEntitlementIdentifiers: 0
+    m_androidProperties:
+      m_playServicesApplicationId: 534717826144
+  m_gameServicesSettings:
+    m_isEnabled: 1
+    m_leaderboards:
+    - m_id: leaderboardMansionNewbie
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.eyes.newbie
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQJA
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardMansionEasy
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.eyes.easy
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQGg
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardMansionNormal
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.eyes.normal
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQGw
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardMansionHard
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.eyes.hard
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQHA
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardMansionNightmare
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.eyes.nightmare
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQJw
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardHospitalNewbie
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.eyes.newbie.hospital
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQJQ
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardHospitalEasy
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.eyes.easy.hospital
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQHQ
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardHospitalNormal
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.eyes.normal.hospital
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQHg
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardHospitalHard
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.eyes.hard.hospital
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQHw
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardHospitalNightmare
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.grp.eyes.nightmare.hospital
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQJg
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardSchoolNewbie
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.eyes.school.newbie
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQPA
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardSchoolEasy
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.eyes.school.easy
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQPQ
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardSchoolNormal
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.eyes.school.normal
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQQA
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardSchoolHard
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.eyes.school.hard
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQPg
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardSchoolNightmare
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.eyes.school.nightmare
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQPw
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardHospitalDoubleTroubleNewbie
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.double.hospital.newbie
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQLA
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardHospitalDoubleTroubleEasy
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.double.hospital.easy
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQLw
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardHospitalDoubleTroubleNormal
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.double.hospital.normal
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQMA
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardHospitalDoubleTroubleHard
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.double.hospital.hard
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQMQ
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardHospitalDoubleTroubleNightmare
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.double.hospital.nightmare
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQMg
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardMansionDoubleTroubleNewbie
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.double.mansion.newbie
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQLg
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardMansionDoubleTroubleEasy
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.double.mansion.easy
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQMw
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardMansionDoubleTroubleNormal
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.double.mansion.normal
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQNA
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardMansionDoubleTroubleHard
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.double.mansion.hard
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQNQ
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardMansionDoubleTroubleNightmare
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.double.mansion.nightmare
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQNg
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardEndlessMode
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.eyes.endless
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQRA
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardSchoolDoubleTroubleNewbie
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.double.school.newbie
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQVA
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardSchoolDoubleTroubleEasy
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.double.school.easy
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQVQ
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardSchoolDoubleTroubleNormal
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.double.school.normal
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQVg
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardSchoolDoubleTroubleHard
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.double.school.hard
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQVw
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardSchoolDoubleTroubleNighmare
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.double.school.nightmare
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQWA
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardMansionFewestSteps
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.MansionShortestPath
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQaQ
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardHospitalFewestSteps
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.HospitalShortestPath
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQag
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardSchoolFewestSteps
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.SchoolShortestPath
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQaw
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardMansionLimitedDoorUses
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.doorLimitMansion
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQbA
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardHospitalLimitedDoorUses
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.doorLimitHospital
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQbQ
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: leaderboardSchoolLimitedDoorUses
+      m_platformId:
+      m_platformIdOverrides:
+        m_ios: grp.doorLimitSchool
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQbg
+      m_title:
+      m_iosProperties: {}
+      m_androidProperties: {}
+    m_achievements:
+    - m_id: achievementGoodBoy
+      m_platformId: CgkI4Iiq_ccPEAIQNw
+      m_platformIdOverrides:
+        m_ios: grp.goodboy
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQNw
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementPumpkinFarmer
+      m_platformId: CgkI4Iiq_ccPEAIQIA
+      m_platformIdOverrides:
+        m_ios: grp.halloween.multiplier1
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQIA
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementPumpkinParty
+      m_platformId: CgkI4Iiq_ccPEAIQIQ
+      m_platformIdOverrides:
+        m_ios: grp.halloween.multiplier4
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQIQ
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementISEEDEADPUMPKINS
+      m_platformId: CgkI4Iiq_ccPEAIQIg
+      m_platformIdOverrides:
+        m_ios: grp.halloween.multiplier9
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQIg
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementBabySteps
+      m_platformId: CgkI4Iiq_ccPEAIQKQ
+      m_platformIdOverrides:
+        m_ios: grp.grp.eyes.Newbie
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQKQ
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementEntrant
+      m_platformId: CgkI4Iiq_ccPEAIQAA
+      m_platformIdOverrides:
+        m_ios: grp.eyes.Entrant
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQAA
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementAdept
+      m_platformId: CgkI4Iiq_ccPEAIQAQ
+      m_platformIdOverrides:
+        m_ios: grp.eyes.Adept
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQAQ
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementMastermind
+      m_platformId: CgkI4Iiq_ccPEAIQAg
+      m_platformIdOverrides:
+        m_ios: grp.eyes.Mastermind
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQAg
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementKingOfTheMansion
+      m_platformId: CgkI4Iiq_ccPEAIQKA
+      m_platformIdOverrides:
+        m_ios: grp.eyes.king
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQKA
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementRunForYourLife
+      m_platformId: CgkI4Iiq_ccPEAIQAw
+      m_platformIdOverrides:
+        m_ios: grp.eyes.Sprinter
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQAw
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementBlindman
+      m_platformId: CgkI4Iiq_ccPEAIQBA
+      m_platformIdOverrides:
+        m_ios: grp.eyes.Blindman
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQBA
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementCollector
+      m_platformId: CgkI4Iiq_ccPEAIQCQ
+      m_platformIdOverrides:
+        m_ios: grp.eyes.Collector
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQCQ
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementPersistent
+      m_platformId: CgkI4Iiq_ccPEAIQCg
+      m_platformIdOverrides:
+        m_ios: grp.eyes.Persistent
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQCg
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementWeMoveUnseen
+      m_platformId: CgkI4Iiq_ccPEAIQCw
+      m_platformIdOverrides:
+        m_ios: grp.eyes.cloakEffect
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQCw
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementEyesMoreEyes
+      m_platformId: CgkI4Iiq_ccPEAIQDA
+      m_platformIdOverrides:
+        m_ios: grp.eyes.extraeyes
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQDA
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementWithTheSpeedOfLight
+      m_platformId: CgkI4Iiq_ccPEAIQDQ
+      m_platformIdOverrides:
+        m_ios: grp.eyes.sprintEffect
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQDQ
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementThirdEyeSeer
+      m_platformId: CgkI4Iiq_ccPEAIQDg
+      m_platformIdOverrides:
+        m_ios: grp.eyes.moneyBagsEffect
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQDg
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementMeticulous
+      m_platformId: CgkI4Iiq_ccPEAIQDw
+      m_platformIdOverrides:
+        m_ios: grp.eyes.allPotions
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQDw
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementPotionNovice
+      m_platformId: CgkI4Iiq_ccPEAIQEA
+      m_platformIdOverrides:
+        m_ios: grp.eyes.10Potions
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQEA
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementPotionApprentice
+      m_platformId: CgkI4Iiq_ccPEAIQEQ
+      m_platformIdOverrides:
+        m_ios: grp.eyes.30Potions
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQEQ
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementMasterChemist
+      m_platformId: CgkI4Iiq_ccPEAIQEg
+      m_platformIdOverrides:
+        m_ios: grp.eyes.50Potions
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQEg
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementNewborn
+      m_platformId: CgkI4Iiq_ccPEAIQKw
+      m_platformIdOverrides:
+        m_ios: grp.eyes.hospital.newbie
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQKw
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementIntern
+      m_platformId: CgkI4Iiq_ccPEAIQEw
+      m_platformIdOverrides:
+        m_ios: grp.grp.eyes.EntrantHospital
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQEw
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementHospitalOverseer
+      m_platformId: CgkI4Iiq_ccPEAIQFA
+      m_platformIdOverrides:
+        m_ios: grp.eyes.AdeptHospital
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQFA
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementHospitalWarden
+      m_platformId: CgkI4Iiq_ccPEAIQFQ
+      m_platformIdOverrides:
+        m_ios: grp.grp.eyes.MastermindHospital
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQFQ
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementHeadOfTheHospital
+      m_platformId: CgkI4Iiq_ccPEAIQKg
+      m_platformIdOverrides:
+        m_ios: grp.eyes.hospital.head
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQKg
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementDoubleTrouble
+      m_platformId: CgkI4Iiq_ccPEAIQLQ
+      m_platformIdOverrides:
+        m_ios: grp.doubletruble
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQLQ
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementSoClose
+      m_platformId: CgkI4Iiq_ccPEAIQOA
+      m_platformIdOverrides:
+        m_ios: grp.eyes.soclose
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQOA
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementShhh
+      m_platformId: CgkI4Iiq_ccPEAIQOQ
+      m_platformIdOverrides:
+        m_ios: grp.eyes.shhh
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQOQ
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementExplorer
+      m_platformId: CgkI4Iiq_ccPEAIQOg
+      m_platformIdOverrides:
+        m_ios: grp.explorerMap
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQOg
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievementFamilyMatters
+      m_platformId: CgkI4Iiq_ccPEAIQOw
+      m_platformIdOverrides:
+        m_ios: grp.eyes.familyMatters
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQOw
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: TheRitual
+      m_platformId: CgkI4Iiq_ccPEAIQRQ
+      m_platformIdOverrides:
+        m_ios: grp.TheRitual
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQRQ
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: WinCoopRandom
+      m_platformId: CgkI4Iiq_ccPEAIQRg
+      m_platformIdOverrides:
+        m_ios: grp.WinCoopRandom
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQRg
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: WinCoopFriend
+      m_platformId: CgkI4Iiq_ccPEAIQRw
+      m_platformIdOverrides:
+        m_ios: grp.WinCoopFriend
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQRw
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: WinVersusRandom
+      m_platformId: CgkI4Iiq_ccPEAIQSA
+      m_platformIdOverrides:
+        m_ios: grp.WinVersusRandom
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQSA
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: WinVersusFriend
+      m_platformId: CgkI4Iiq_ccPEAIQSQ
+      m_platformIdOverrides:
+        m_ios: grp.WinVersusFriend
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQSQ
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievement_newbie_school
+      m_platformId: CgkI4Iiq_ccPEAIQSg
+      m_platformIdOverrides:
+        m_ios: grp.achievement_newbie_school
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQSg
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievement_easy_school
+      m_platformId: CgkI4Iiq_ccPEAIQSw
+      m_platformIdOverrides:
+        m_ios: grp.achievement_easy_school
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQSw
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievement_normal_school
+      m_platformId: CgkI4Iiq_ccPEAIQTA
+      m_platformIdOverrides:
+        m_ios: grp.achievement_normal_school
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQTA
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievement_hard_school
+      m_platformId: CgkI4Iiq_ccPEAIQTQ
+      m_platformIdOverrides:
+        m_ios: grp.achievement_hard_school
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQTQ
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievement_nightmare_school
+      m_platformId: CgkI4Iiq_ccPEAIQTg
+      m_platformIdOverrides:
+        m_ios: grp.achievement_nightmare_school
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQTg
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievement_map_school
+      m_platformId: CgkI4Iiq_ccPEAIQTw
+      m_platformIdOverrides:
+        m_ios: grp.achievement_map_school
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQTw
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievement_coop_nightmare_mansion
+      m_platformId: CgkI4Iiq_ccPEAIQUA
+      m_platformIdOverrides:
+        m_ios: grp.achievement_coop_nightmare_mansion
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQUA
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievement_coop_nightmare_hospital
+      m_platformId: CgkI4Iiq_ccPEAIQUQ
+      m_platformIdOverrides:
+        m_ios: grp.achievement_coop_nightmare_hospital
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQUQ
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievement_coop_nightmare_school
+      m_platformId: CgkI4Iiq_ccPEAIQUg
+      m_platformIdOverrides:
+        m_ios: grp.achievement_coop_nightmare_school
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQUg
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    - m_id: achievement_map_hospital
+      m_platformId: CgkI4Iiq_ccPEAIQUw
+      m_platformIdOverrides:
+        m_ios: grp.achievement_map_hospital
+        m_tvos:
+        m_android: CgkI4Iiq_ccPEAIQUw
+      m_title:
+      m_numOfStepsToUnlock: 1
+      m_iosProperties: {}
+      m_androidProperties: {}
+    m_showAchievementCompletionBanner: 1
+    m_allowFriendsAccess: 1
+    m_androidProperties:
+      m_playServicesApplicationId: 534717826144
+      m_serverClientId: 534717826144-8lap05vm5qef0cubvom4v00kho7dqu2d.apps.googleusercontent.com
+      m_forceRefreshToken: 1
+      m_showErrorDialogs: 1
+      m_enableAutoInitialization: 1
+  m_billingServicesSettings:
+    m_isEnabled: 0
+    m_products: []
+    m_autoFinishTransactions: 1
+    m_autoHandleExternalProductPurchaseActions: 1
+    m_androidProperties:
+      m_publicKey:
+  m_networkServicesSettings:
+    m_isEnabled: 1
+    m_hostAddress:
+      m_ipv4: 68.183.242.164
+      m_ipv6: 0:0:0:0:0:FFFF:0808:0808
+    m_autoStartNotifier: 1
+    m_pingSettings:
+      m_maxRetryCount: 2
+      m_timeGapBetweenPolling: 2
+      m_timeOutPeriod: 2
+      m_port: 53
+  m_notificationServicesSettings:
+    m_isEnabled: 0
+    m_presentationOptions: 7
+    m_usesLocationBasedNotification: 0
+    m_pushNotificationServiceType: 0
+    m_androidProperties:
+      m_needsBigStyle: 0
+      m_allowVibration: 1
+      m_whiteSmallIcon: {fileID: 0}
+      m_colouredSmallIcon: {fileID: 0}
+      m_allowNotificationDisplayWhenForeground: 0
+      m_accentColor: '#FFFFFF'
+      m_payloadKeys:
+        m_contentTitle: content_title
+        m_contentText: content_text
+        m_tickerText: ticker_text
+        m_userInfo: user_info
+        m_tag: tag
+        m_badge: badge
+        m_priority: priority
+        m_sound: sound
+        m_bigPicture: big_picture
+        m_largeIcon: large_icon
+      m_allowExactTimeScheduling: 0
+      m_canIgnoreDozeMode: 0
+  m_mediaServicesSettings:
+    m_isEnabled: 0
+    m_usesCameraForImageCapture: 1
+    m_usesCameraForVideoCapture: 0
+    m_savesFilesToPhotoGallery: 1
+    m_savesFilesToCustomDirectories: 1
+  m_deepLinkServicesSettings:
+    m_isEnabled: 0
+    m_iosProperties:
+      m_customSchemeUrls: []
+      m_universalLinks: []
+    m_androidProperties:
+      m_customSchemeUrls: []
+      m_universalLinks: []
+  m_rateMyAppSettings:
+    m_isEnabled: 0
+    m_autoShow: 1
+    m_allowReratingForNewVersion: 0
+    m_confirmationDialogSettings:
+      m_canShow: 1
+      m_promptTitle: Rate My App
+      m_promptDescription: If you enjoy using Native Plugins would you mind taking a moment to rate it? It wont take more than a minute. Thanks for your support.
+      m_okButtonLabel: Ok
+      m_cancelButtonLabel: Cancel
+      m_remindLaterButtonLabel: Remind Me Later
+      m_canShowRemindMeLaterButton: 1
+    m_contraintsSettings:
+      m_initialPromptConstraints:
+        m_minHours: 2
+        m_minLaunches: 0
+      m_repeatPromptConstraints:
+        m_minHours: 6
+        m_minLaunches: 5
+  m_taskServicesSettings:
+    m_isEnabled: 0
+  m_utilitySettings:
+    m_isEnabled: 0
+    m_usesAgeComplianceApi: 0
+  m_webViewSettings:
+    m_isEnabled: 0
+    m_androidProperties:
+      m_usesCamera: 0
+      m_usesMicrophone: 0
+      m_allowBackNavigationKey: 1

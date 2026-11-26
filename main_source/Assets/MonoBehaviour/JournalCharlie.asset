@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 725b5b764f4b9b824859eedf06364051, type: 3}
+  m_Name: JournalCharlie
+  m_EditorClassIdentifier:
+  enemyId: 1
+  dialogues:
+  - {fileID: 11400000, guid: c939d8a51441cce4e86c9407d45fc62e, type: 2}
+  - {fileID: 11400000, guid: b73196198bb4caf469b6dadd118602c2, type: 2}
+  - {fileID: 11400000, guid: 2268027349d67154e929a986a18903f5, type: 2}
+  - {fileID: 11400000, guid: 812d9af69ab0d85469a05ba36cde63e7, type: 2}
+  - {fileID: 11400000, guid: f8fd3f1ae527de64c9c2e8e29c904dc2, type: 2}
+  - {fileID: 11400000, guid: 5d6f5dc7efb04694bb02077742d31d4a, type: 2}

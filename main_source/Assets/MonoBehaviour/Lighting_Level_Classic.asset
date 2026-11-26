@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8de8b6601e067c77c54f07b2731079e3, type: 3}
+  m_Name: Lighting_Level_Classic
+  m_EditorClassIdentifier:
+  lmScale: 1.25
+  flashlightIntensity: 0
+  hideFlashlightModel: 1
+  overrideAmbient: 0
+  ambientColor: {r: 0.176, g: 0.176, b: 0.176, a: 1}
+  overrideFalloff: 0
+  falloffStart: 3.8
+  falloffEnd: 8.8

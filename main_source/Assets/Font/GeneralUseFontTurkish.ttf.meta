@@ -1,0 +1,26 @@
+fileFormatVersion: 2
+guid: e86721a83b95bae4e9ce426185a4b139
+timeCreated: 1793711111
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  externalObjects: {}
+  fontSize: 60
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Unutterable Turkish
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 4c29a2f7e1e01b14ab45c7f79cfb02c6, type: 3}
+  customCharacters:
+  fontRenderingMode: 0
+  output:
+    hasEmptyFontData: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData:
+  assetBundleName:
+  assetBundleVariant:

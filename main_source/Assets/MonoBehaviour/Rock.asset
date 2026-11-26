@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2fc7cb57261d460cddf11907e4ff3c3, type: 3}
+  m_Name: Rock
+  m_EditorClassIdentifier:
+  ImpactFX:
+  - ImpactEvent: {fileID: 11400000, guid: 42ee0eaa1bbfcff47aba5cfce19b5be5, type: 2}
+    SurfaceEffect: {fileID: 11400000, guid: 895242b791c30924eb6d09cce9ddda74, type: 2}
+  - ImpactEvent: {fileID: 11400000, guid: bfa60b6eec96f754ea6442695ba93710, type: 2}
+    SurfaceEffect: {fileID: 11400000, guid: 70c20588615c1604f9b03dc61d556fde, type: 2}
+  - ImpactEvent: {fileID: 11400000, guid: e1ee8f357bb3b2a4a871190d8f8d3838, type: 2}
+    SurfaceEffect: {fileID: 11400000, guid: c8f569869c1d88d4eb4170234e07bb93, type: 2}
+  - ImpactEvent: {fileID: 11400000, guid: 754d34d218714f74094b59e50a9883de, type: 2}
+    SurfaceEffect: {fileID: 11400000, guid: 0faacfecadffbb247900a5f0ee5dd031, type: 2}
+  - ImpactEvent: {fileID: 11400000, guid: e6893c9ecc7164c41a1164ee9a1eb4d6, type: 2}
+    SurfaceEffect: {fileID: 11400000, guid: 5c34782aeba05424fbed57279eaa022c, type: 2}
+  AllowFootprints: 0

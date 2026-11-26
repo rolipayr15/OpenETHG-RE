@@ -1,0 +1,12 @@
+public enum GameFinishedReason
+{
+	NETWORK_ERROR = 0,
+	EXIT_TO_MENU = 1,
+	HOST_KILLED = 2,
+	GUEST_KILLED = 3,
+	HOST_WON = 4,
+	GUEST_WON = 5,
+	CANCEL = 6,
+	APP_QUIT = 7,
+	REMOVE_ABUSER = 8
+}
